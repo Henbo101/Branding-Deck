@@ -445,6 +445,10 @@ function TimelineSlide({ m }) {
           </div>
         ))}
       </div>
+
+      <p style={{ fontSize: 13, color: "var(--text-faint)", marginTop: 28, fontStyle: "italic" }}>
+        These timelines can be expedited depending on project scope and how quickly feedback is turned around.
+      </p>
     </div>
   );
 }
