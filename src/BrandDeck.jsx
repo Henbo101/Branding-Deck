@@ -14,7 +14,7 @@ const PHASES = [
     deliverable: "Brand Strategy Document",
     payment: "20% upfront deposit",
     description:
-      "We immerse ourselves in your world. Through structured interviews and competitive research, we map the landscape and identify the strategic territory your brand should own.",
+      "I immerse myself in your world. Through structured interviews and competitive research, I map the landscape and identify the strategic territory your brand should own.",
   },
   {
     num: "02",
@@ -61,7 +61,7 @@ const PHASES = [
     deliverable: "Brand Book + Production Assets",
     payment: "60% final balance",
     description:
-      "Everything packaged for independence. Your team gets the tools, templates, and rules to deploy the brand consistently — without needing us in the room.",
+      "Everything packaged for independence. Your team gets the tools, templates, and rules to deploy the brand consistently — without needing me in the room.",
   },
 ];
 
@@ -502,7 +502,7 @@ function PaymentSlide({ m }) {
 function ClosingSlide({ m }) {
   const steps = [
     { n: "01", t: "Gain further insights on the Fintech Startup", s: "Begin establishing a position for it (and name it!)" },
-    { n: "02", t: "Share the NDA", s: "So we can discuss the fintech opportunity in more detail" },
+    { n: "02", t: "Share the NDA", s: "So I can discuss the fintech opportunity in more detail" },
     { n: "03", t: "Review any existing materials", s: "Pitch decks, product documentation, etc." },
   ];
 
@@ -513,7 +513,7 @@ function ClosingSlide({ m }) {
         Three steps to <span style={{ fontStyle: "italic", color: "var(--accent)" }}>get started</span>
       </h2>
       <p className="bd" style={{ maxWidth: 480, marginBottom: 40 }}>
-        Once the priority project is confirmed, we can move quickly. Discovery typically begins within a week of engagement.
+        Once the priority project is confirmed, I can move quickly. Discovery typically begins within a week of engagement.
       </p>
 
       {steps.map((s, i) => (
