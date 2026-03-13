@@ -65,7 +65,7 @@ const PHASES = [
   },
 ];
 
-const TIMELINE_WEEKS = 7;
+const TIMELINE_WEEKS = 6;
 const TOTAL_SLIDES = 8;
 const SLIDE_LABELS = ["Intro", "01", "02", "03", "04", "Timeline", "Payment", "Next"];
 
@@ -292,7 +292,7 @@ export default function BrandDeck() {
 function IntroSlide({ m }) {
   const stats = [
     { val: "4", label: "Phases" },
-    { val: "~7", label: "Weeks" },
+    { val: "~6", label: "Weeks" },
     { val: "3", label: "Payment stages" },
   ];
   return (
@@ -307,7 +307,7 @@ function IntroSlide({ m }) {
         <span style={{ fontStyle: "italic", color: "var(--accent)" }}>complete identity</span>
       </h1>
       <p className="bd" style={{ maxWidth: 520, marginBottom: 36 }}>
-        A four-phase process, typically around 7 weeks, taking you from initial research through to a finished brand system with full guidelines and assets.
+        A four-phase process, typically around 6 weeks, taking you from initial research through to a finished brand system with full guidelines and assets.
       </p>
       <div className="stat-row-inner" style={{ display: "flex", gap: 36 }}>
         {stats.map((s, i) => (
@@ -392,7 +392,7 @@ function TimelineSlide({ m }) {
     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: m ? "0 4%" : "0 6%" }}>
       <div className="lbl" style={{ marginBottom: 12 }}>TIMELINE</div>
       <h2 className="hd" style={{ fontSize: m ? 26 : "clamp(26px, 3.5vw, 36px)", marginBottom: 6 }}>
-        7-week delivery schedule
+        6-week delivery schedule
       </h2>
       <p style={{ fontSize: 14, color: "var(--text-faint)", marginBottom: 36 }}>
         From kickoff to final asset delivery
