@@ -14,7 +14,7 @@ const PHASES = [
     deliverable: "Brand Strategy Document",
     payment: "20% upfront deposit",
     description:
-      "I start by getting a proper understanding of your business — through conversations and research — to figure out where your brand should sit in the market.",
+      "I start by getting a proper understanding of your business, through conversations and research, to figure out where your brand should sit in the market.",
   },
   {
     num: "02",
@@ -29,7 +29,7 @@ const PHASES = [
     deliverable: "Concept Presentation (2–3 Routes)",
     payment: "20% on completion",
     description:
-      "I'll present 2–3 genuinely different brand directions — not variations on the same idea, but distinct approaches you can choose between.",
+      "I'll present 2–3 genuinely different brand directions, not variations on the same idea, but distinct approaches you can choose between.",
   },
   {
     num: "03",
@@ -44,7 +44,7 @@ const PHASES = [
       "Mockups across key touchpoints",
     ],
     deliverable: "Complete Visual Identity System",
-    payment: "—",
+    payment: null,
     description:
       "The chosen direction gets built out into a complete identity system. Type, colour, imagery, and layout all working together and ready to use across any format.",
   },
@@ -61,7 +61,7 @@ const PHASES = [
     deliverable: "Brand Book + Production Assets",
     payment: "60% final balance",
     description:
-      "Everything handed over so your team can use the brand confidently from day one — files, templates, and guidelines included.",
+      "Everything handed over so your team can use the brand confidently from day one: files, templates, and guidelines included.",
   },
 ];
 
@@ -297,7 +297,7 @@ function IntroSlide({ m }) {
   ];
   return (
     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: m ? "0 4%" : "0 10%" }}>
-      <div className="lbl ri go" style={{ marginBottom: 16 }}>EDGECRAFT & STARTUP — BRANDING PROCESS</div>
+      <div className="lbl ri go" style={{ marginBottom: 16 }}>EDGECRAFT & STARTUP · BRANDING PROCESS</div>
       <h1 className="hd" style={{ fontSize: m ? 32 : "clamp(36px, 5vw, 54px)", marginBottom: 20 }}>
         From strategy to<br />
         <span style={{ fontStyle: "italic", color: "var(--accent)" }}>complete identity</span>
@@ -360,11 +360,11 @@ function PhaseSlide({ phase, index, m }) {
           ))}
         </div>
         <div className="meta-row">
-          <div className="card" style={phase.payment === "—" ? { flex: 1 } : {}}>
+          <div className="card" style={!phase.payment ? { flex: 1 } : {}}>
             <div className="lbl-m" style={{ marginBottom: 6 }}>DELIVERABLE</div>
             <div style={{ fontSize: 14, color: "var(--text-primary)", fontWeight: 500 }}>{phase.deliverable}</div>
           </div>
-          {phase.payment !== "—" && (
+          {phase.payment && (
           <div className="card" style={{ borderColor: `color-mix(in srgb, ${phase.color} 30%, transparent)` }}>
             <div className="lbl-m" style={{ marginBottom: 6 }}>PAYMENT</div>
             <div style={{ fontSize: 14, color: phase.color, fontWeight: 500 }}>{phase.payment}</div>
