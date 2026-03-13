@@ -296,7 +296,11 @@ function IntroSlide({ m }) {
     { val: "3", label: "Payment stages" },
   ];
   return (
-    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: m ? "0 4%" : "0 10%" }}>
+    <div style={{ position: "relative", display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: m ? "0 4%" : "0 10%" }}>
+      <div style={{ position: "absolute", top: 0, right: 0, textAlign: "right" }}>
+        <div style={{ fontSize: 11, fontWeight: 500, color: "var(--text-secondary)", letterSpacing: "0.05em" }}>Henry Killick</div>
+        <div className="lbl-m" style={{ marginTop: 3 }}>Triband Studio</div>
+      </div>
       <div className="lbl ri go" style={{ marginBottom: 16 }}>EDGECRAFT & STARTUP · BRANDING PROCESS</div>
       <h1 className="hd" style={{ fontSize: m ? 32 : "clamp(36px, 5vw, 54px)", marginBottom: 20 }}>
         From strategy to<br />
@@ -511,7 +515,11 @@ function ClosingSlide({ m }) {
   ];
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: m ? "0 4%" : "0 10%" }}>
+    <div style={{ position: "relative", display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: m ? "0 4%" : "0 10%" }}>
+      <div style={{ position: "absolute", top: 0, right: 0, textAlign: "right" }}>
+        <div style={{ fontSize: 11, fontWeight: 500, color: "var(--text-secondary)", letterSpacing: "0.05em" }}>Henry Killick</div>
+        <div className="lbl-m" style={{ marginTop: 3 }}>Triband Studio</div>
+      </div>
       <div className="lbl" style={{ marginBottom: 16 }}>WHAT HAPPENS NEXT</div>
       <h2 className="hd" style={{ fontSize: m ? 28 : "clamp(30px, 4vw, 44px)", marginBottom: 8 }}>
         Three steps to <span style={{ fontStyle: "italic", color: "var(--accent)" }}>get started</span>
