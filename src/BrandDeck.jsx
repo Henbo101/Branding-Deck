@@ -14,7 +14,7 @@ const PHASES = [
     deliverable: "Brand Strategy Document",
     payment: "20% upfront deposit",
     description:
-      "I immerse myself in your world. Through structured interviews and competitive research, I map the landscape and identify the strategic territory your brand should own.",
+      "I start by getting a proper understanding of your business — through conversations and research — to figure out where your brand should sit in the market.",
   },
   {
     num: "02",
@@ -29,7 +29,7 @@ const PHASES = [
     deliverable: "Concept Presentation (2–3 Routes)",
     payment: "20% on completion",
     description:
-      "Multiple creative territories brought to life. Each direction is a distinct strategic bet — not variations on a theme, but genuinely different ways to show up in the market.",
+      "I'll present 2–3 genuinely different brand directions — not variations on the same idea, but distinct approaches you can choose between.",
   },
   {
     num: "03",
@@ -46,7 +46,7 @@ const PHASES = [
     deliverable: "Complete Visual Identity System",
     payment: "—",
     description:
-      "The chosen direction is engineered into a complete system. Every element — type, colour, imagery, layout — is designed to work together and scale across any medium.",
+      "The chosen direction gets built out into a complete identity system. Type, colour, imagery, and layout all working together and ready to use across any format.",
   },
   {
     num: "04",
@@ -61,7 +61,7 @@ const PHASES = [
     deliverable: "Brand Book + Production Assets",
     payment: "60% final balance",
     description:
-      "Everything packaged for independence. Your team gets the tools, templates, and rules to deploy the brand consistently — without needing me in the room.",
+      "Everything handed over so your team can use the brand confidently from day one — files, templates, and guidelines included.",
   },
 ];
 
@@ -303,7 +303,7 @@ function IntroSlide({ m }) {
         <span style={{ fontStyle: "italic", color: "var(--accent)" }}>complete identity</span>
       </h1>
       <p className="bd" style={{ maxWidth: 520, marginBottom: 36 }}>
-        A structured four-phase process — typically 7 weeks — taking you from discovery through to a production-ready brand system with full guidelines and assets.
+        A four-phase process, typically around 7 weeks, taking you from initial research through to a finished brand system with full guidelines and assets.
       </p>
       <div className="stat-row-inner" style={{ display: "flex", gap: 36 }}>
         {stats.map((s, i) => (
