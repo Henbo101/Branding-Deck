@@ -385,7 +385,7 @@ function TimelineSlide({ m }) {
   const weeks = Array.from({ length: TIMELINE_WEEKS }, (_, i) => i + 1);
   const bars = [
     { p: 0, s: 0, e: 1 }, { p: 1, s: 1, e: 3 },
-    { p: 2, s: 3, e: 5 }, { p: 3, s: 5, e: 7 },
+    { p: 2, s: 3, e: 5 }, { p: 3, s: 5, e: 6 },
   ];
 
   return (
